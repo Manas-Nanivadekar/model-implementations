@@ -4,16 +4,13 @@ import coremltools as ct
 from transformers import AutoModelForMaskedLM, AutoTokenizer
 
 
-# Define a wrapper class to handle the model's dictionary output
 class RobertaMaskedLMWrapper(nn.Module):
     def __init__(self, model):
         super(RobertaMaskedLMWrapper, self).__init__()
         self.model = model
 
     def forward(self, input_ids, attention_mask):
-        # Pass the inputs to the underlying RoBERTa model
         outputs = self.model(input_ids=input_ids, attention_mask=attention_mask)
-        # Extract and return only the logits
         return outputs.logits
 
 
@@ -32,7 +29,7 @@ def convert_roberta_to_coreml():
     print("Preparing example inputs for tracing...")
     text = "Plants create <mask> through a process known as photosynthesis."
 
-    inputs = tokenizer(text, return_tensors="pt", padding="max_length", max_length=128)
+    inputs = tokenizer(text, return_tensors="pt", padding="max_length", max_length=256)
     example_input_ids = inputs["input_ids"]
     example_attention_mask = inputs["attention_mask"]
 

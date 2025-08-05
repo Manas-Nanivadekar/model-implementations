@@ -209,3 +209,4 @@ __marimo__/
 # coreml conversions
 roberta_tokenizer_files
 RoBERTaMaskedLM.mlpackage
+RoBERTa.mlpackage
