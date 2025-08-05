@@ -1,52 +1,79 @@
 import torch
-from transformers import WhisperProcessor, WhisperForConditionalGeneration
+import torch.nn as nn
 import coremltools as ct
-
-# --- 1. Load the whisper-tiny model from Hugging Face ---
-model_name = "openai/whisper-tiny"
-processor = WhisperProcessor.from_pretrained(model_name)
-model = WhisperForConditionalGeneration.from_pretrained(model_name)
-
-# --- 2. Create sample inputs required for the conversion ---
-# The model's encoder expects mel-spectrograms of the audio
-mel_input = torch.rand(1, model.config.num_mel_bins, 3000)
-
-# The model's decoder expects token IDs
-decoder_input_ids = torch.tensor([[50258, 50259, 50359]])  # Example start tokens
-
-# --- 3. Convert the Audio Encoder ---
-# This part of the model processes the audio spectrogram
-traced_encoder = torch.jit.trace(model.get_encoder(), mel_input)
-
-encoder_mlmodel = ct.convert(
-    traced_encoder,
-    convert_to="mlprogram",
-    inputs=[ct.TensorType(shape=mel_input.shape, name="mel_input")],
-    compute_units=ct.ComputeUnit.ALL,
-)
-encoder_mlmodel.save("WhisperEncoder.mlpackage")
-print("✅ Encoder saved to WhisperEncoder.mlpackage")
+from transformers import AutoModelForMaskedLM, AutoTokenizer
 
 
-# --- 4. Convert the Text Decoder ---
-# This part of the model generates the text transcription
-# It needs both the encoder's output and the current text tokens
-encoder_output = traced_encoder(mel_input)
+# Define a wrapper class to handle the model's dictionary output
+class RobertaMaskedLMWrapper(nn.Module):
+    def __init__(self, model):
+        super(RobertaMaskedLMWrapper, self).__init__()
+        self.model = model
 
-traced_decoder = torch.jit.trace(
-    model, (encoder_output, decoder_input_ids), strict=False
-)
+    def forward(self, input_ids, attention_mask):
+        # Pass the inputs to the underlying RoBERTa model
+        outputs = self.model(input_ids=input_ids, attention_mask=attention_mask)
+        # Extract and return only the logits
+        return outputs.logits
 
-decoder_mlmodel = ct.convert(
-    traced_decoder,
-    convert_to="mlprogram",
-    inputs=[
-        ct.TensorType(shape=encoder_output.shape, name="encoder_output"),
-        ct.TensorType(
-            shape=decoder_input_ids.shape, dtype=int, name="decoder_input_ids"
-        ),
-    ],
-    compute_units=ct.ComputeUnit.ALL,
-)
-decoder_mlmodel.save("WhisperDecoder.mlpackage")
-print("✅ Decoder saved to WhisperDecoder.mlpackage")
+
+def convert_roberta_to_coreml():
+    tokenizer = AutoTokenizer.from_pretrained("FacebookAI/roberta-base")
+    base_model = AutoModelForMaskedLM.from_pretrained(
+        "FacebookAI/roberta-base",
+        torch_dtype=torch.float32,  # Core ML conversion works best with float32
+        attn_implementation="sdpa",
+    )
+    base_model.eval()  # Set the model to evaluation mode
+
+    # Instantiate the wrapper with the loaded model
+    model = RobertaMaskedLMWrapper(base_model)
+    model.eval()
+
+    print("Preparing example inputs for tracing...")
+    text = "Plants create <mask> through a process known as photosynthesis."
+
+    inputs = tokenizer(text, return_tensors="pt", padding="max_length", max_length=128)
+    example_input_ids = inputs["input_ids"]
+    example_attention_mask = inputs["attention_mask"]
+
+    print("Tracing the model...")
+    traced_model = torch.jit.trace(
+        model, (example_input_ids, example_attention_mask), strict=False
+    )
+
+    input_ids_spec = ct.TensorType(
+        name="input_ids",
+        shape=(1, ct.RangeDim(1, 512)),  # Batch size 1, sequence length from 1 to 512
+        dtype=int,  # Use Python int type, coremltools will map it correctly
+    )
+    attention_mask_spec = ct.TensorType(
+        name="attention_mask",
+        shape=(1, ct.RangeDim(1, 512)),  # Batch size 1, sequence length from 1 to 512
+        dtype=int,  # Use Python int type
+    )
+
+    print("Converting the model to Core ML format...")
+    coreml_model = ct.convert(
+        traced_model,
+        inputs=[input_ids_spec, attention_mask_spec],
+        convert_to="mlprogram",  # Use the modern mlprogram format
+        compute_units=ct.ComputeUnit.CPU_AND_GPU,  # Allow the model to run on CPU or GPU
+        minimum_deployment_target=ct.target.iOS15,  # Set the minimum iOS version
+    )
+
+    # The output is automatically named, but we can access it to add a description.
+    # The default name for the first output is often 'var_1234' or similar.
+    # We find it by index to be safe.
+    # output_name = coreml_model.output_description.keys()[0]
+    # coreml_model.output_description[output_name] = "The output logits from the model."
+
+    # 7. Save the Core ML model
+    output_path = "RoBERTaMaskedLM.mlpackage"
+    print(f"Saving the Core ML model to {output_path}...")
+    coreml_model.save(output_path)
+    print("Conversion complete!")
+
+
+if __name__ == "__main__":
+    convert_roberta_to_coreml()
