@@ -211,3 +211,4 @@ roberta_tokenizer_files
 RoBERTaMaskedLM.mlpackage
 RoBERTa.mlpackage
 clip.mlpackage
+CLIPClassifer.mlpackage
