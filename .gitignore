@@ -213,3 +213,6 @@ RoBERTa.mlpackage
 clip.mlpackage
 CLIPClassifer.mlpackage
 clip_exporter
+
+# android conversions
+clip_image_encoder.pte
