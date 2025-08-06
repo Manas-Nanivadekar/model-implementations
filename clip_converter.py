@@ -14,7 +14,7 @@ dummy_pixel_values = torch.rand(1, 3, 224, 224)
 dummy_input_ids = torch.randint(0, 1000, (3, 77))
 
 
-class CLIP(torch.nn.Module):
+class CLIPClassifer(torch.nn.Module):
     def __init__(self, hf_model):
         super().__init__()
         self.model = hf_model
@@ -26,7 +26,7 @@ class CLIP(torch.nn.Module):
         return outputs.logits_per_image
 
 
-wrapped_model = CLIP(model)
+wrapped_model = CLIPClassifer(model)
 
 
 traced_model = torch.jit.trace(wrapped_model, (dummy_pixel_values, dummy_input_ids))
@@ -43,5 +43,5 @@ mlmodel = ct.convert(
 )
 
 
-output_path = "clip.mlpackage"
+output_path = "CLIPClassifier.mlpackage"
 mlmodel.save(output_path)
