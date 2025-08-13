@@ -140,7 +140,7 @@ def run_whisper_on_segment(
 
     # Whisper: you can set fp16=False for CPU-only inference
     result = model.transcribe(
-        seg_wav, language=language, fp16=False if device == "cpu" else None
+        seg_wav, language="hi", fp16=False if device == "cpu" else None
     )
     return result.get("text", "").strip()
 
@@ -174,7 +174,7 @@ def transcribe_with_diarization(
             pieces = []
             for s0, s1 in subchunks:
                 txt = run_whisper_on_segment(
-                    model, audio_path, s0, s1, language, device, tmpdir
+                    model, audio_path, s0, s1, "hi", device, tmpdir
                 )
                 if txt:
                     pieces.append(txt)
