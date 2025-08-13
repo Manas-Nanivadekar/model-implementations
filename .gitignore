@@ -218,3 +218,7 @@ clip_exporter
 clip_image_encoder.pte
 clip_text_encoder.pte
 roberta-base-fillmask.pte
+
+# audio
+audio.m4a
+audio.wav
