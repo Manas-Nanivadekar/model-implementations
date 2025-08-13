@@ -4,7 +4,7 @@ import os
 
 
 def convert_m4a_to_wav(input_path, output_path):
-    audio = AudioSegment.from_file(input_path, format="m4a")
+    audio = AudioSegment.from_file(input_path, format="mp3")
 
     audio = audio.set_channels(1)
     audio = audio.set_frame_rate(16000)
