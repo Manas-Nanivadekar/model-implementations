@@ -1,0 +1,114 @@
+{
+  "text": " fried jeena ok po jal i suitable weekend k k k 3 k Did you notice it?",
+  "segments": [
+    {
+      "id": 0,
+      "seek": 6000,
+      "start": 60.24,
+      "end": 61.84,
+      "text": " fried jeena ok",
+      "tokens": [50376, 10425, 1506, 4118, 3133, 50456],
+      "temperature": 1.0,
+      "avg_logprob": -3.839783191680908,
+      "compression_ratio": 0.9259259259259259,
+      "no_speech_prob": 0.18830324709415436
+    },
+    {
+      "id": 1,
+      "seek": 6000,
+      "start": 61.84,
+      "end": 62.52,
+      "text": " po jal",
+      "tokens": [50456, 714, 361, 304, 50490],
+      "temperature": 1.0,
+      "avg_logprob": -3.839783191680908,
+      "compression_ratio": 0.9259259259259259,
+      "no_speech_prob": 0.18830324709415436
+    },
+    {
+      "id": 2,
+      "seek": 6000,
+      "start": 62.52,
+      "end": 63.96,
+      "text": " i suitable weekend",
+      "tokens": [50490, 741, 12873, 6711, 50562],
+      "temperature": 1.0,
+      "avg_logprob": -3.839783191680908,
+      "compression_ratio": 0.9259259259259259,
+      "no_speech_prob": 0.18830324709415436
+    },
+    {
+      "id": 3,
+      "seek": 6000,
+      "start": 63.96,
+      "end": 65.28,
+      "text": " k",
+      "tokens": [50562, 350, 50628],
+      "temperature": 1.0,
+      "avg_logprob": -3.839783191680908,
+      "compression_ratio": 0.9259259259259259,
+      "no_speech_prob": 0.18830324709415436
+    },
+    {
+      "id": 4,
+      "seek": 6000,
+      "start": 66.16,
+      "end": 67.16,
+      "text": " k",
+      "tokens": [50672, 350, 50722],
+      "temperature": 1.0,
+      "avg_logprob": -3.839783191680908,
+      "compression_ratio": 0.9259259259259259,
+      "no_speech_prob": 0.18830324709415436
+    },
+    {
+      "id": 5,
+      "seek": 6000,
+      "start": 73.88,
+      "end": 74.44,
+      "text": " k",
+      "tokens": [51058, 350, 51086],
+      "temperature": 1.0,
+      "avg_logprob": -3.839783191680908,
+      "compression_ratio": 0.9259259259259259,
+      "no_speech_prob": 0.18830324709415436
+    },
+    {
+      "id": 6,
+      "seek": 6000,
+      "start": 74.44,
+      "end": 75.48,
+      "text": " 3",
+      "tokens": [51086, 805, 51138],
+      "temperature": 1.0,
+      "avg_logprob": -3.839783191680908,
+      "compression_ratio": 0.9259259259259259,
+      "no_speech_prob": 0.18830324709415436
+    },
+    {
+      "id": 7,
+      "seek": 6000,
+      "start": 84.1,
+      "end": 84.92,
+      "text": " k",
+      "tokens": [51569, 350, 51610],
+      "temperature": 1.0,
+      "avg_logprob": -3.839783191680908,
+      "compression_ratio": 0.9259259259259259,
+      "no_speech_prob": 0.18830324709415436
+    },
+    {
+      "id": 8,
+      "seek": 9000,
+      "start": 90.0,
+      "end": 96.88,
+      "text": " Did you notice it?",
+      "tokens": [50364, 2589, 291, 3449, 309, 30, 50708],
+      "temperature": 1.0,
+      "avg_logprob": -2.86869740486145,
+      "compression_ratio": 0.6923076923076923,
+      "no_speech_prob": 0.16850674152374268
+    }
+  ],
+  "language": "hi"
+}
