@@ -1,28 +1,27 @@
-from transformers import VoxtralForConditionalGeneration, AutoProcessor
-import torch
+from mistral_common.protocol.transcription.request import TranscriptionRequest
+from mistral_common.protocol.instruct.messages import RawAudio
+from mistral_common.audio import Audio
+from huggingface_hub import hf_hub_download
 
-device = "cpu"
-repo_id = "mistralai/Voxtral-Mini-3B-2507"
+from openai import OpenAI
 
-processor = AutoProcessor.from_pretrained(repo_id)
-model = VoxtralForConditionalGeneration.from_pretrained(
-    repo_id, torch_dtype=torch.bfloat16, device_map=device
+# Modify OpenAI's API key and API base to use vLLM's API server.
+openai_api_key = "EMPTY"
+openai_api_base = "http://localhost:8000/v1"
+
+client = OpenAI(
+    api_key=openai_api_key,
+    base_url=openai_api_base,
 )
 
-inputs = processor.apply_transcription_request(
-    language="hi",
-    audio="audio.mp4",
-    model_id=repo_id,
-)
-inputs = inputs.to(device, dtype=torch.bfloat16)
+models = client.models.list()
+model = models.data[0].id
 
-outputs = model.generate(**inputs, max_new_tokens=500)
-decoded_outputs = processor.batch_decode(
-    outputs[:, inputs.input_ids.shape[1] :], skip_special_tokens=True
-)
+obama_file = hf_hub_download("patrickvonplaten/audio_samples", "obama.mp3", repo_type="dataset")
+audio = Audio.from_file(obama_file, strict=False)
 
-print("\nGenerated responses:")
-print("=" * 80)
-for decoded_output in decoded_outputs:
-    print(decoded_output)
-    print("=" * 80)
+audio = RawAudio.from_audio(audio)
+req = TranscriptionRequest(model=model, audio=audio, language="en", temperature=0.0).to_openai(exclude=("top_p", "seed"))
+
+response = client.audio.transcriptions.create(**req)
+print(response)

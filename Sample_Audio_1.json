@@ -1,0 +1,551 @@
+{
+  "metadata": {
+    "audio_filename": "Sample Audio 1",
+    "speakers": [
+      {
+        "id": "spk1",
+        "name": "Asha",
+        "type": "",
+        "dialect": "native",
+        "accent": ""
+      },
+      {
+        "id": "spk2",
+        "name": "Patient",
+        "type": "female",
+        "dialect": "native",
+        "accent": ""
+      }
+    ]
+  },
+  "transcriptions": [
+    {
+      "speaker": "spk1",
+      "start_time": 0.0,
+      "end_time": 14.7,
+      "transcript": "आज दिनांक ग्यारह आठ दो हजार पच्चीस जिला सूरजपुर ब्लॉक बहियाथान सी.एस.सी बहियाथान। मैं नवजात के घर भ्रमण कर रही हूँ।"
+    },
+    {
+      "speaker": "spk1",
+      "start_time": 14.7,
+      "end_time": 16.691,
+      "transcript": "<PAUSE>"
+    },
+    {
+      "speaker": "spk1",
+      "start_time": 16.691,
+      "end_time": 18.313,
+      "transcript": "हाँ दीदी तोह।"
+    },
+    {
+      "speaker": "spk1",
+      "start_time": 18.313,
+      "end_time": 22.493,
+      "transcript": "<PAUSE>"
+    },
+    {
+      "speaker": "spk1",
+      "start_time": 22.493,
+      "end_time": 26.228,
+      "transcript": "हाँ दीदी अवात क्या करत है दीदी।"
+    },
+    {
+      "speaker": "spk2",
+      "start_time": 26.228,
+      "end_time": 29.485,
+      "transcript": "कुछ नहीं येही लेडका ला सुकात रहें।"
+    },
+    {
+      "speaker": "spk1",
+      "start_time": 29.485,
+      "end_time": 33.968,
+      "transcript": "हाँ तोह तुम्हारे लेडकान हर केसन है दीदी?"
+    },
+    {
+      "speaker": "spk2",
+      "start_time": 33.968,
+      "end_time": 35.184,
+      "transcript": "ठीक है लड़का ह।"
+    },
+    {
+      "speaker": "spk1",
+      "start_time": 35.184,
+      "end_time": 43.18,
+      "transcript": "हाँ तो तनी पानी देता। मैं हाथ दोह के तूमार लेडकान कर देखती।"
+    },
+    {
+      "speaker": "spk2",
+      "start_time": 43.18,
+      "end_time": 47.69,
+      "transcript": "ठीक है दीदी लाना था। ले दीदी पानी ओर इते साबुन।"
+    },
+    {
+      "speaker": "spk1",
+      "start_time": 47.69,
+      "end_time": 58.449,
+      "transcript": "हाँ तोह दिखा मैं इस में दोव्त है छे चरण में, हेना। तूह दुहा मोर साथ में और देखके सीखा हेना।"
+    },
+    {
+      "speaker": "spk2",
+      "start_time": 58.449,
+      "end_time": 59.616,
+      "transcript": "ठीक है दीदी।"
+    },
+    {
+      "speaker": "spk1",
+      "start_time": 59.616,
+      "end_time": 66.482,
+      "transcript": "ह्म हाँ तोह दीदी तूमार लई क्या कर स्तनपान करत हैना दीदी।"
+    },
+    {
+      "speaker": "spk2",
+      "start_time": 66.482,
+      "end_time": 68.24,
+      "transcript": "हाँ हाँ करत है।"
+    },
+    {
+      "speaker": "spk1",
+      "start_time": 68.24,
+      "end_time": 73.046,
+      "transcript": "हा और लाडरु में कुछ पका पुका तोह नहीं है दीदी।"
+    },
+    {
+      "speaker": "spk2",
+      "start_time": 73.046,
+      "end_time": 74.21,
+      "transcript": "नहीं तोह पकत हैं।"
+    },
+    {
+      "speaker": "spk2",
+      "start_time": 74.21,
+      "end_time": 75.646,
+      "transcript": "नहीं पकत हेना।"
+    },
+    {
+      "speaker": "spk2",
+      "start_time": 75.646,
+      "end_time": 76.414,
+      "transcript": "ह्म"
+    },
+    {
+      "speaker": "spk1",
+      "start_time": 76.414,
+      "end_time": 81.562,
+      "transcript": "हा और नाभि है तोर साफ सुथरा हेना दीदी।"
+    },
+    {
+      "speaker": "spk2",
+      "start_time": 81.562,
+      "end_time": 83.325,
+      "transcript": "हाँ हाँ साफ सुथरा हैं।"
+    },
+    {
+      "speaker": "spk1",
+      "start_time": 83.325,
+      "end_time": 84.454,
+      "transcript": "<UNINTELLIGIBLE>"
+    },
+    {
+      "speaker": "spk2",
+      "start_time": 84.454,
+      "end_time": 85.313,
+      "transcript": "नहीं"
+    },
+    {
+      "speaker": "spk1",
+      "start_time": 85.313,
+      "end_time": 90.081,
+      "transcript": "तो आना दीदी तुम्हें लेके आना तुम हम अभी देख लेते है।"
+    },
+    {
+      "speaker": "spk2",
+      "start_time": 90.081,
+      "end_time": 92.392,
+      "transcript": "ठीक है एते दीदी लेके आहा।"
+    },
+    {
+      "speaker": "spk1",
+      "start_time": 92.392,
+      "end_time": 93.702,
+      "transcript": "ह्म"
+    },
+    {
+      "speaker": "spk1",
+      "start_time": 93.702,
+      "end_time": 97.449,
+      "transcript": "हाँ दीदी तुम लेके आता बहुत अच्छा है दीदी।"
+    },
+    {
+      "speaker": "spk2",
+      "start_time": 97.449,
+      "end_time": 98.8,
+      "transcript": "हाँ"
+    },
+    {
+      "speaker": "spk2",
+      "start_time": 98.8,
+      "end_time": 103.032,
+      "transcript": "<PAUSE>"
+    },
+    {
+      "speaker": "spk2",
+      "start_time": 103.032,
+      "end_time": 106.783,
+      "transcript": "दीदी तोह इस्तनपान कैसे करत है दीदी।"
+    },
+    {
+      "speaker": "spk1",
+      "start_time": 106.783,
+      "end_time": 108.87,
+      "transcript": "अच्छा से कर लेत तुम्हें पता है।"
+    },
+    {
+      "speaker": "spk2",
+      "start_time": 108.87,
+      "end_time": 114.534,
+      "transcript": "हा सोत के भी करा देत होए इस्तनपान और बैठ के भी करत है।"
+    },
+    {
+      "speaker": "spk1",
+      "start_time": 114.534,
+      "end_time": 131.629,
+      "transcript": "नहीं दीदी अभी नवजात है ना तोह बैठ के ही आरामदायक से बैठनी है तो फिर इस्तनपान करे ह दीदी। का है की सोत के पिलाई हेना तो काही भी इस्तन हे निकले लागी तो कही पे ती पड़ ना जाए हेना आँख कान में"
+    },
+    {
+      "speaker": "spk1",
+      "start_time": 131.629,
+      "end_time": 137.976,
+      "transcript": "तो आराम से बैठ के पिलाना है दीदी। दिनभर में केदर पिलात है दीदी।"
+    },
+    {
+      "speaker": "spk2",
+      "start_time": 137.976,
+      "end_time": 143.016,
+      "transcript": "दिनभर में तीन-चार बार पिलाती काम हम करत रखी तो।"
+    },
+    {
+      "speaker": "spk1",
+      "start_time": 143.016,
+      "end_time": 151.162,
+      "transcript": "नहीं हा नहीं दीदी कम से कम दिन में आठ से दस बार तक स्तनपान कराना है हेना दीदी।"
+    },
+    {
+      "speaker": "spk2",
+      "start_time": 151.162,
+      "end_time": 153.166,
+      "transcript": "ठीक है।"
+    },
+    {
+      "speaker": "spk2",
+      "start_time": 153.166,
+      "end_time": 160.711,
+      "transcript": "<PAUSE>"
+    },
+    {
+      "speaker": "spk2",
+      "start_time": 160.711,
+      "end_time": 168.995,
+      "transcript": "ना दीदी तो तूह अपन दूध ही पिलाई हा हेना, बाहर का कुछ चीज़ मत पिलाई ह दीदी।"
+    },
+    {
+      "speaker": "spk2",
+      "start_time": 168.995,
+      "end_time": 174.974,
+      "transcript": "हाँ हाँ ठीक है नहीं पिया बॉटल वाला भी नहीं पिया है। अपन ही दूध पिलात है।"
+    },
+    {
+      "speaker": "spk1",
+      "start_time": 174.974,
+      "end_time": 186.109,
+      "transcript": "हा तोह बाहर तो जैसे दूध बच्चे को मला मत पिलाई ह, अपन स्तन ही पिलाई ह, काहे के अपन स्तनपान करा लेला बहुत फायदा होत है हेना दीदी।"
+    },
+    {
+      "speaker": "spk2",
+      "start_time": 186.109,
+      "end_time": 186.832,
+      "transcript": "हाँ हाँ"
+    },
+    {
+      "speaker": "spk1",
+      "start_time": 186.832,
+      "end_time": 195.74,
+      "transcript": "दस्त भी नहीं होय हेना, और अच्छा से परवा ना कर मजबूत भी अच्छा से रखे।"
+    },
+    {
+      "speaker": "spk1",
+      "start_time": 195.74,
+      "end_time": 198.47,
+      "transcript": "<PAUSE>"
+    },
+    {
+      "speaker": "spk1",
+      "start_time": 198.47,
+      "end_time": 199.547,
+      "transcript": "ओर दीदी"
+    },
+    {
+      "speaker": "spk1",
+      "start_time": 199.547,
+      "end_time": 204.05,
+      "transcript": "<PAUSE>"
+    },
+    {
+      "speaker": "spk1",
+      "start_time": 204.05,
+      "end_time": 222.726,
+      "transcript": "बच्चा ना जैसे लपेट के रखे ह दीदी तोह गर्म रही हेना, कंगारू विधि भी घर में कोई भी कर सकते है। और दादी भी कर सकती है और प्पा भी हेना ओह मन के बनावो ना दीदी साथ के बन के सीखा देवे हेना।"
+    },
+    {
+      "speaker": "spk2",
+      "start_time": 222.726,
+      "end_time": 225.948,
+      "transcript": "हु तो ना दीदी कंगारू विधि कैसे करते है। मैं"
+    },
+    {
+      "speaker": "spk2",
+      "start_time": 225.948,
+      "end_time": 226.759,
+      "transcript": "<OVERLAP>"
+    },
+    {
+      "speaker": "spk1",
+      "start_time": 226.759,
+      "end_time": 237.276,
+      "transcript": "हा दीदी कैसे करना है, वही प्रकार से करना है। हूँ हूँ, तोह दीदी दिखा इला कोई भी कर सके तो, माँ का"
+    },
+    {
+      "speaker": "spk1",
+      "start_time": 237.276,
+      "end_time": 250.189,
+      "transcript": "और बच्चा का भावनात्मक ऊपर बड़े हेना भाव अच्छा प्रति हार भी बड़े और तोकर वजन बड़े हेना, और जो माँ बच्चा को लगावत है वो तोह unitelligible।"
+    },
+    {
+      "speaker": "spk2",
+      "start_time": 250.189,
+      "end_time": 251.501,
+      "transcript": "ठीक है दीदी।"
+    },
+    {
+      "speaker": "spk1",
+      "start_time": 251.501,
+      "end_time": 254.862,
+      "transcript": "हाँ तो एकठो कपड़ा दिया दीदी।"
+    },
+    {
+      "speaker": "spk2",
+      "start_time": 254.862,
+      "end_time": 258.744,
+      "transcript": "ह्म हा ला कपड़ा चादर टेकने।"
+    },
+    {
+      "speaker": "spk2",
+      "start_time": 258.744,
+      "end_time": 260.203,
+      "transcript": "हम्म"
+    },
+    {
+      "speaker": "spk1",
+      "start_time": 260.203,
+      "end_time": 279.151,
+      "transcript": "हाँ दीदी तो तूमार आगे का तीन ब्लाउज का बटन हेना खोलीहा और शर्ट बच्चा का ना शर्ट का बटन अभी खोल दिहा और मोझा पिना दिहा, टोपी पिना दिहा बच्चा ना दोनों इस्तन के बीच में रख के दीदी देखा-देखा अपना हाथ दीदी एक"
+    },
+    {
+      "speaker": "spk1",
+      "start_time": 279.151,
+      "end_time": 279.762,
+      "transcript": "<OVERLAP>"
+    },
+    {
+      "speaker": "spk1",
+      "start_time": 279.762,
+      "end_time": 299.569,
+      "transcript": "रखना है। फिर ताकि बच्चा का सिर अभी ध्यान दिहा, ताकि नाक है ऊपर नाले बे इस्तनपान भी करा सके बीच में हेना, हेना दीदी तुमने देखिया न ऐसे ही करना है। दिन में कम से कम आठ बार करना है।"
+    },
+    {
+      "speaker": "spk1",
+      "start_time": 299.569,
+      "end_time": 303.505,
+      "transcript": "लेकिन एक घण्टा तक कोई भी कर सकते ह।"
+    },
+    {
+      "speaker": "spk2",
+      "start_time": 303.505,
+      "end_time": 307.392,
+      "transcript": "कोई भी कर सकते दीदी कंगारू विधि मैं काम करत रहू तो कोई भी कर"
+    },
+    {
+      "speaker": "spk2",
+      "start_time": 307.392,
+      "end_time": 308.084,
+      "transcript": "<OVERLAP>"
+    },
+    {
+      "speaker": "spk1",
+      "start_time": 308.084,
+      "end_time": 317.018,
+      "transcript": "ह घर में तोह वो भी कर सकती है। हेना अगर दादी है वो भी सकती है पर फूहा है वो भी कर सकती है। कोई भी कर सकते है।"
+    },
+    {
+      "speaker": "spk2",
+      "start_time": 317.018,
+      "end_time": 319.74,
+      "transcript": "दीदी ये कंगारू विधि करेले क्या फ़ायदा होत है।"
+    },
+    {
+      "speaker": "spk1",
+      "start_time": 319.74,
+      "end_time": 328.301,
+      "transcript": "दीदी एकोठ वजन बढ़त है हेना, और जो माँ बच्चा का प्यार धरोहर भी बढ़त हैं हेना।"
+    },
+    {
+      "speaker": "spk2",
+      "start_time": 328.301,
+      "end_time": 329.517,
+      "transcript": "ठीक दीदी।"
+    },
+    {
+      "speaker": "spk2",
+      "start_time": 329.517,
+      "end_time": 332.661,
+      "transcript": "<PAUSE>"
+    },
+    {
+      "speaker": "spk1",
+      "start_time": 332.661,
+      "end_time": 337.287,
+      "transcript": "और ठंडा भी रहे दीदी बच्चा हे जल्दी बीमार भी नहीं पड़े हेना।"
+    },
+    {
+      "speaker": "spk2",
+      "start_time": 337.287,
+      "end_time": 338.48,
+      "transcript": "हा हा"
+    },
+    {
+      "speaker": "spk2",
+      "start_time": 338.48,
+      "end_time": 343.798,
+      "transcript": "<PAUSE>"
+    },
+    {
+      "speaker": "spk1",
+      "start_time": 343.798,
+      "end_time": 353.408,
+      "transcript": "ठीक है दीदी बहुत अच्छा तुम अपन तुमा तू तू भी दिखा बच्चा का साथ-साथ अपन भी दियान दी हे हेना।"
+    },
+    {
+      "speaker": "spk2",
+      "start_time": 353.408,
+      "end_time": 353.933,
+      "transcript": "हाँ"
+    },
+    {
+      "speaker": "spk1",
+      "start_time": 353.933,
+      "end_time": 360.091,
+      "transcript": "ह्म ख़ान पान के तुभी थोड़ा-थोड़ा करके हर चीज़ खा सकता हेना।"
+    },
+    {
+      "speaker": "spk2",
+      "start_time": 360.091,
+      "end_time": 361.17,
+      "transcript": "हाँ, दीदी"
+    },
+    {
+      "speaker": "spk1",
+      "start_time": 361.17,
+      "end_time": 375.474,
+      "transcript": "और क्या बोलत हे कोई भी साधन भी तूह भी अपना सकता ताकि वे जल्दी बच्चा फ़िर से ना रुके। तीन साल को अंतरा होए हेना।"
+    },
+    {
+      "speaker": "spk2",
+      "start_time": 375.474,
+      "end_time": 376.659,
+      "transcript": "ठीक है दीदी।"
+    },
+    {
+      "speaker": "spk1",
+      "start_time": 376.659,
+      "end_time": 379.748,
+      "transcript": "हाँ तो साधन में जानत है दीदी?"
+    },
+    {
+      "speaker": "spk2",
+      "start_time": 379.748,
+      "end_time": 380.873,
+      "transcript": "नहीं जानत हूँ।"
+    },
+    {
+      "speaker": "spk2",
+      "start_time": 380.873,
+      "end_time": 389.702,
+      "transcript": "<PAUSE>"
+    },
+    {
+      "speaker": "spk1",
+      "start_time": 389.702,
+      "end_time": 400.031,
+      "transcript": "हाँ दीदी तो अंतराल के स्थाई होत है हेना और अस्थाई भी होत है, तो तुमके बई अभी तो एक थोड़ा बच्चा लेना है।"
+    },
+    {
+      "speaker": "spk2",
+      "start_time": 400.031,
+      "end_time": 401.435,
+      "transcript": "हाँ दीदी लेना है।"
+    },
+    {
+      "speaker": "spk1",
+      "start_time": 401.435,
+      "end_time": 404.888,
+      "transcript": "तो साधन भी अपना सकता हेना दीदी।"
+    },
+    {
+      "speaker": "spk2",
+      "start_time": 404.888,
+      "end_time": 405.978,
+      "transcript": "ठीक है दीदी।"
+    },
+    {
+      "speaker": "spk1",
+      "start_time": 405.978,
+      "end_time": 408.403,
+      "transcript": "हम्म, कापट्टी तेरी लगी सी।"
+    },
+    {
+      "speaker": "spk2",
+      "start_time": 408.403,
+      "end_time": 409.94,
+      "transcript": "हाँ लगी स कापट्टी"
+    },
+    {
+      "speaker": "spk1",
+      "start_time": 409.94,
+      "end_time": 413.375,
+      "transcript": "हा लगी स तो ठीक है दीदी बहुत अच्छी बात है।"
+    },
+    {
+      "speaker": "spk1",
+      "start_time": 413.375,
+      "end_time": 415.909,
+      "transcript": "<PAUSE>"
+    },
+    {
+      "speaker": "spk1",
+      "start_time": 415.909,
+      "end_time": 431.372,
+      "transcript": "हा बहुत अच्छा दीदी की तू अच्छा से हर चीज़ तू कर है और इस्तनपान भी अच्छे से लेके आना दिन में कम से कम आठ बार, आठ से दस बार करात रहिया दीदी हेना।"
+    },
+    {
+      "speaker": "spk1",
+      "start_time": 431.372,
+      "end_time": 447.225,
+      "transcript": "और बाहर को कुछ मत पिलाईया दीदी, छे महीना तक सिर्फ़ तुम अपन दूध लाही पिलाई हे हेना दीदी। बहुत अच्छा दीदी की तू अपन बच्चाला और अपन भी ध्यान दियत है दीदी।"
+    },
+    {
+      "speaker": "spk2",
+      "start_time": 447.225,
+      "end_time": 449.52,
+      "transcript": "ठीक है दीदी तोह।"
+    }
+  ]
+}
